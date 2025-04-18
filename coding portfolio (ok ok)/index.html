@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>CODING PORFOLIO</h1>
+        <form class="form-container" id="searchForm">
+            <input type="text" placeholder="Enter LeetCode ID..." id="searchInputLeetcode">
+            <input type="text" placeholder="Enter GFG ID..." id="searchInputGFG">
+            <button class="btn" type="submit">
+                Get the Data
+            </button>
+        </form>
+
+        <!-- for LEETCODE only -->
+        <div class="stats-container" id="statsContainer">
+            <h2>LeetCode Statistics</h2>
+            <p id="error-message" class="error-message"></p>
+            <ul id="statsList">
+                <!-- Stats will be displayed here dynamically -->
+            </ul>
+            <!-- <div id="statsContainer"></div> -->
+        </div>
+         <!-- FOR GFG only -->
+        <div class="stats-container-2" id="statsContainer-2">
+            <h2>GFG Statistics</h2>
+            <p id="error-message2" class="error-message2"></p>
+            <ul id="statsList2">
+                <!-- Stats will be displayed here dynamically -->
+            </ul>
+            <!-- <div id="statsContainer2"></div> -->
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
